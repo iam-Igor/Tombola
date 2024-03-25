@@ -116,7 +116,7 @@ body {
   }
 }
 
-.modal-content {
+.modal-content:not(.modal-end .modal-content) {
   background: none;
   border: 0;
   justify-content: center !important;
@@ -124,7 +124,7 @@ body {
   flex-direction: row;
 }
 
-.modal-body {
+.modal-body:not(.modal-end .modal-body) {
   text-align: center;
   background-color: #fde2c5;
 

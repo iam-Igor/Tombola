@@ -16,6 +16,8 @@ const Main = () => {
   const [extractedNumber, setExtractedNumber] = useState(0);
   const [numberOfCards, setNumberOfCards] = useState(0);
 
+  const [showEndModal, setShowEndModal] = useState(false);
+
   const navigate = useNavigate();
 
   const title = ["T", "O", "M", "B", "O", "L", "A"];
@@ -50,8 +52,9 @@ const Main = () => {
   const extractNumber = () => {
     let rndmNumber = Math.floor(Math.random() * 90) + 1;
 
-    if (extractedNumbers.length === 90) {
+    if (extractedNumbers.length === 89) {
       console.log("finito");
+      setShowEndModal(true);
       return false;
     } else {
       if (checkExistingNumber(rndmNumber)) {
@@ -210,6 +213,29 @@ const Main = () => {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
+      <Modal
+        className="modal-end"
+        show={showEndModal}
+        onHide={() => {
+          setShowEndModal(false);
+        }}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Partita finita!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Clicca sul bottone per ricominciare</Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="success rounded-4 shadow-btm"
+            onClick={() => {
+              setShowEndModal(false);
+              window.location.reload();
+            }}
+          >
+            Ricomincia
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
   );
 };
