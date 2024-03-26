@@ -1,4 +1,4 @@
-# React + Vite
+# Tombola!
 
 ## The best winter's holiday game, now fully responsive and with the possibility of printing cards for playing at home
 
