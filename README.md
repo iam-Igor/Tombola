@@ -1,8 +1,7 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## The best winter's holiday game, now fully responsive and with the possibility of printing cards for playing at home
 
-Currently, two official plugins are available:
+You can play the game here -> https://tombola-two.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![My-Portfolio](https://res.cloudinary.com/dr4x8lu8f/image/upload/v1711404400/IMG_4907_l7bcqn.png)](https://tombola-two.vercel.app)
